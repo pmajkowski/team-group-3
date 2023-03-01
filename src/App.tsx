@@ -1,6 +1,7 @@
 import React, { useRef, FormEvent } from "react"; 
 import { firestore } from "./firebase" 
 import { addDoc, collection } from "@firebase/firestore"
+import Button from "./components/buttons/Button";
 import "./App.module.css";
 
 function App(): JSX.Element { 
@@ -28,7 +29,7 @@ function App(): JSX.Element {
     <div className="App">
       <form onSubmit={handleSubmit}>
         <input type="text" ref={testRef} />
-        <button type="submit">submit to database</button>
+        <Button type={"submit"} primary>submit to database</Button>
       </form>
     </div>
   );
