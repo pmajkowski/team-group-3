@@ -1,11 +1,15 @@
-import React from 'react';
-import './App.module.css';
+import React from "react";
+import "./App.module.css";
 
 function App() {
   return (
-    <div className="App">
- Projekt grupa 3
-    </div>
+    <>
+      <div className="App">
+        Nasz wspólny projekt - A Team
+        <div>Kolejna linijka</div>
+      </div>
+      ;
+    </>
   );
 }
 
