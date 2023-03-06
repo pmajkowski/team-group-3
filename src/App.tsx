@@ -4,6 +4,7 @@ import { addDoc, collection } from "@firebase/firestore";
 import Button from "./components/buttons/Button";
 import "./App.module.css";
 import QuestionForm from "./components/Questions/QuestionForm";
+import AboutForm from "./components/about/AboutForm";
 
 function App(): JSX.Element {
   const testRef = useRef<HTMLInputElement>(null);
@@ -34,6 +35,7 @@ function App(): JSX.Element {
           submit to database
         </Button>
         <QuestionForm></QuestionForm>
+        <AboutForm></AboutForm>
       </form>
     </div>
   );

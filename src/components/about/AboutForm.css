@@ -1,0 +1,32 @@
+.about {
+  height: 700px;
+  background-color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.gallery {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+img {
+  height: 10em;
+  width: 14em;
+}
+.content {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.h2_about {
+  padding: 0 0 50px 150px;
+  text-align: right;
+}
