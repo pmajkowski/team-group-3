@@ -1,0 +1,15 @@
+
+.footer {
+    background-color: dimgrey;
+    padding: 10px;
+}
+.section-1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.section-2 {
+    border-top: 1px dotted black;
+    text-align: right;
+    padding: 10px;
+}
