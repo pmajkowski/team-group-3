@@ -1,5 +1,5 @@
 import './footer.css'
-const Footer = () => {
+function Footer(): JSX.Element {
     return <div className="footer">
         <section className="section-1">
     <div>EQUIPMENT RENTALS</div>
