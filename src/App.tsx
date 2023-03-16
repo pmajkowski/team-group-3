@@ -1,7 +1,8 @@
 import AppRoutes from "./components/Routes/Routes";
+import React from "react";
 
-function App(): JSX.Element {
+const App: React.FC = () => {
 	return <AppRoutes />;
-}
+};
 
 export default App;
