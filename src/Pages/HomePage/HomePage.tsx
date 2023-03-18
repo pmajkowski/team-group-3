@@ -4,6 +4,7 @@ import { addDoc, collection } from "@firebase/firestore";
 import Button from "../../components/buttons/Button";
 
 import QuestionForm from "../../components/Questions/QuestionForm";
+import Maps from "../../components/Maps/Maps";
 import AboutForm from "../../components/about/AboutForm";
 import NavigationList from "../../components/Navigation/NavigationList";
 import UserNavigationList from "../../components/UserNavigation/UserNavigationList";
@@ -42,6 +43,7 @@ function HomePage(): JSX.Element {
         </Button>
         <ContentForm></ContentForm>
         <AboutForm></AboutForm>
+        <Maps></Maps>
       </form>
     </div>
   );

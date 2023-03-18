@@ -116,7 +116,7 @@ function QuestionForm(): JSX.Element {
           <Button type={"submit"} primary>
             Prześlij
           </Button>
-          {/* <button type="submit">sdfafdsadsfa</button> */}
+
         </form>
       </Container>
     </>
