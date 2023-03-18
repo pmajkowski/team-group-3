@@ -43,8 +43,8 @@ function HomePage(): JSX.Element {
         </Button>
         <ContentForm></ContentForm>
         <AboutForm></AboutForm>
-        <Maps></Maps>
       </form>
+      <Maps></Maps>
     </div>
   );
 }
