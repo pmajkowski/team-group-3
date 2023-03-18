@@ -34,12 +34,12 @@ function HomePage(): JSX.Element {
     <div className="App">
       <UserNavigationList />
       <NavigationList />
+      <QuestionForm></QuestionForm>
       <form onSubmit={handleSubmit}>
         <input type="text" ref={testRef} />
         <Button type={"submit"} primary>
           submit to database
         </Button>
-        <QuestionForm></QuestionForm>
         <ContentForm></ContentForm>
         <AboutForm></AboutForm>
       </form>
