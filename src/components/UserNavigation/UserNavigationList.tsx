@@ -36,11 +36,7 @@ function UserNavigationList() {
 		);
 	});
 	// Return a div that contains the renderedNavigationList of UserNavigationItem components
-	return (
-		<div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto my-12 flex-row gap-x-5">
-			{renderedNavigationList}
-		</div>
-	);
+	return <div className="">{renderedNavigationList}</div>;
 }
 
 // Export the UserNavigationList component as the default export of the file

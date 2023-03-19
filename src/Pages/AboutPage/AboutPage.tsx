@@ -1,7 +1,8 @@
 import React from "react";
+import SidebarNavigationList from "../../components/SidebarNavigation/SidebarNavigationList";
 
-function AboutPage() {
-	return <div>AboutPage</div>;
-}
+const AboutPage: React.FC = () => {
+	return <SidebarNavigationList />;
+};
 
 export default AboutPage;

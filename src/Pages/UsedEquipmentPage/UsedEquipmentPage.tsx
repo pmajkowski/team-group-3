@@ -1,7 +1,8 @@
 import React from "react";
+import SidebarNavigationList from "../../components/SidebarNavigation/SidebarNavigationList";
 
 function UsedEquipmentPage() {
-	return <div>UsedEquipmentPage</div>;
+	return <SidebarNavigationList />;
 }
 
 export default UsedEquipmentPage;
