@@ -1,8 +1,8 @@
 import React from "react";
 import SidebarNavigationList from "../../components/SidebarNavigation/SidebarNavigationList";
 
-function UsedEquipmentPage() {
+function EquipmentsAtWorkPage() {
 	return <SidebarNavigationList />;
 }
 
-export default UsedEquipmentPage;
+export default EquipmentsAtWorkPage;

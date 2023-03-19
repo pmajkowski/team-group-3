@@ -1,8 +1,8 @@
-export const SidebardUsedEquipmentNavigation = [
+export const SidebardEquipmentsAtWorkNavigation = [
 	{
 		id: 1,
-		name: `Used Equipment`,
-		link: `/usedequip`,
+		name: `Equipments at work`,
+		link: `//equip-at-work`,
 	},
 ];
 export const SidebardDownloadsNavigation = [

@@ -19,29 +19,30 @@ const navigationList: ListedNavigation[] = [
 	},
 	{
 		id: 3,
-		name: `Used Equipment`,
-		link: `/usedequip`,
+		name: `Equipments at work`,
+		link: `//equip-at-work`,
 	},
 	{
 		id: 4,
+		name: `Realizations`,
+		link: `/realizations`,
+	},
+	{
+		id: 5,
 		name: `Locations`,
 		link: `/locations`,
 	},
 	{
-		id: 5,
+		id: 6,
 		name: `About`,
 		link: `/about`,
 	},
 	{
-		id: 6,
+		id: 7,
 		name: `Forms & Downloads`,
 		link: `/downloads`,
 	},
-	{
-		id: 7,
-		name: `AR Motorsports`,
-		link: `/ar-motorsports`,
-	},
+
 ];
 
 function NavigationList() {

@@ -2,7 +2,7 @@ import React from "react";
 import SidebarNavigationItem from "./SidebarNavigationItem";
 import { useLocation } from "react-router-dom";
 import {
-	SidebardUsedEquipmentNavigation,
+	SidebardEquipmentsAtWorkNavigation,
 	SidebardDownloadsNavigation,
 	SidebardLocationsNavigation,
 	SidebardAboutNavigation,
@@ -13,8 +13,8 @@ const SidebarNavigationList: React.FC = () => {
 	const { pathname } = useLocation();
 	let navigationList = SidebardEquipmentRentalsNavigation;
 
-	if (pathname.startsWith("/usedequip")) {
-		navigationList = SidebardUsedEquipmentNavigation;
+	if (pathname.startsWith("/equip-at-work")) {
+		navigationList = SidebardEquipmentsAtWorkNavigation;
 	}
 	if (pathname.startsWith("/downloads")) {
 		navigationList = SidebardDownloadsNavigation;
