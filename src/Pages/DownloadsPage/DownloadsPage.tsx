@@ -1,7 +1,8 @@
 import React from "react";
+import SidebarNavigationList from "../../components/SidebarNavigation/SidebarNavigationList";
 
 function DownloadsPage() {
-	return <div>DownloadsPage</div>;
+	return <SidebarNavigationList />;
 }
 
 export default DownloadsPage;
