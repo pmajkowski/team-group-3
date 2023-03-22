@@ -31,62 +31,33 @@ export const SidebardAboutNavigation = [
 export const SidebardEquipmentRentalsNavigation = [
 	{
 		id: 1,
-		name: `Aerial`,
+		name: `General construction equipments`,
 		link: ``,
 	},
 	{
 		id: 2,
-		name: `Earth Moving`,
+		name: `Excavator attachments`,
 		link: ``,
 	},
 	{
 		id: 3,
-		name: `Forklifts`,
+		name: `High performance machines`,
 		link: ``,
 	},
 	{
 		id: 4,
-		name: `Portable Power and Lighting`,
+		name: `Turnout installation`,
 		link: ``,
 	},
 	{
-		id: 4,
-		name: `Trucks and Trailers`,
+		id: 5,
+		name: `Rail transport`,
 		link: ``,
 	},
 	{
-		id: 4,
-		name: `Compaction`,
+		id: 6,
+		name: `Rail welding`,
 		link: ``,
-	},
-	{
-		id: 4,
-		name: `Compaction`,
-		link: ``,
-	},
-	{
-		id: 4,
-		name: `Lawn and Gardens`,
-		link: ``,
-	},
-	{
-		id: 4,
-		name: `Industrial Tools`,
-		link: ``,
-	},
-	{
-		id: 4,
-		name: `Concrete and Masonry`,
-		link: ``,
-	},
-	{
-		id: 4,
-		name: `*Misc. Equipment`,
-		link: ``,
-	},
-	{
-		id: 4,
-		name: `*Misc. Equipment`,
-		link: ``,
-	},
+	}
+	
 ];
