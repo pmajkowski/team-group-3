@@ -1,0 +1,10 @@
+.gallery {
+    text-align: center;
+    
+}
+.rendered-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}

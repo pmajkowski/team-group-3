@@ -1,7 +1,11 @@
 import React from "react";
+import RealizationsList from "../../components/gallery/realizationsList";
 
 function RealizationsPage() {
-	return <div>RealizationsPage</div>;
+	return (
+		<RealizationsList />
+
+	);
 }
 
 export default RealizationsPage;
