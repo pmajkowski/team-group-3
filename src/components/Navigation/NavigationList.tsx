@@ -20,7 +20,7 @@ const navigationList: ListedNavigation[] = [
 	{
 		id: 3,
 		name: `Equipments at work`,
-		link: `//equip-at-work`,
+		link: `/equip-at-work`,
 	},
 	{
 		id: 4,
@@ -42,7 +42,6 @@ const navigationList: ListedNavigation[] = [
 		name: `Forms & Downloads`,
 		link: `/downloads`,
 	},
-
 ];
 
 function NavigationList() {

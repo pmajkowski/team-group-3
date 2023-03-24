@@ -1,7 +1,7 @@
 const EquipmentsAtWorkList: React.FC = () => {
-	return (
-        <div></div>
-    )
+	return <div>test</div>;
 };
 
 export default EquipmentsAtWorkList;
+
+rafce;
