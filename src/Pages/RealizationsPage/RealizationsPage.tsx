@@ -1,6 +1,6 @@
-import Footer from "../../components/footer/footer";
+import Footer from "../../components/Footer/Footer";
 import NavigationList from "../../components/Navigation/NavigationList";
-import RealizationsList from "../../components/realizations/realizationsList";
+import RealizationsList from "../../components/Realizations/RealizationsList";
 import SidebarNavigationList from "../../components/SidebarNavigation/SidebarNavigationList";
 import './RealizationsPage.css'
 

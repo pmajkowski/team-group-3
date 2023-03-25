@@ -1,4 +1,4 @@
-import './footer.css'
+import './Footer.css'
 function Footer(): JSX.Element {
     return <div className="footer">
         <section className="section-1">

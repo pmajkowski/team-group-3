@@ -1,5 +1,5 @@
-import {RealizationsItem, RealizationsItemProps} from "./realizationsItem";
-import './realizationsList.css'
+import {RealizationsItem, RealizationsItemProps} from "./RealizationsItem";
+import './RealizationsList.css'
 import r1 from "../../img/gallery/realizations/r1.jpg"
 import r2 from "../../img/gallery/realizations/r2.jpeg"
 import r3 from "../../img/gallery/realizations/r3.jpeg"

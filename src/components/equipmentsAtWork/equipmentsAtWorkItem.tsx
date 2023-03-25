@@ -1,4 +1,4 @@
-import './equipmentsAtWorkItem.css'
+import './EquipmentsAtWorkItem.css'
 export interface EquipmentsAtWorkItem {
     src: string,
     alt: string
