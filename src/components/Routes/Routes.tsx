@@ -8,7 +8,7 @@ import EquipmentRentalsPage from "../../Pages/EquipmentRentalsPage/EquipmentRent
 import HomePage from "../../Pages/HomePage/HomePage";
 import LocationsPage from "../../Pages/LocationsPage/LocationsPage";
 import LoginPage from "../../Pages/LoginPage/LoginPage";
-import EquipmentsAtWorkPage from "../../Pages/EquipmentsAtWorkPage/EquipmentsAtWork";
+import EquipmentsAtWorkPage from "../../Pages/EquipmentsAtWorkPage/EquipmentsAtWorkPage";
 
 const AppRoutes: React.FC = () => {
 	return (

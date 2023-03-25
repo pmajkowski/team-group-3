@@ -1,17 +1,16 @@
 import './realizationsItem.css'
 
-interface RealizationsItemProps {
+export interface RealizationsItem {
     src: string;
     alt: string;
-    key:string;
+}
+export interface RealizationsItemProps {
+    realizationsItem: RealizationsItem
 }
 
-const RealizationsItem = ({src, alt}:RealizationsItemProps) => {
-	return (
-        <div className="single-picture" id="effect">
-            <img alt={alt} src={src} />
-        </div>
-    )
-};
-
-export default RealizationsItem;
+export function RealizationsItem(props:RealizationsItemProps): JSX.Element {
+  return (
+  <div className="single-image">
+    <img alt={props.realizationsItem.alt} src={props.realizationsItem.src} className="image-ef"/>
+</div>)
+}
