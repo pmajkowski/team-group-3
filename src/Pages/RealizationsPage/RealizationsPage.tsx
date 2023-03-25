@@ -1,5 +1,5 @@
 import React from "react";
-import RealizationsList from "../../components/gallery/realizationsList";
+import RealizationsList from "../../components/realizations/realizationsList";
 
 function RealizationsPage() {
 	return (

@@ -1,0 +1,15 @@
+.single-picture {
+    border: 1px solid darkgrey;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:azure;
+}
+img {
+    border-radius: 10px;
+}
+#effect {
+    transition: transform 0.2s ease-in-out;
+    }
+#effect :hover {
+    transform: scale(1.2);
+    }

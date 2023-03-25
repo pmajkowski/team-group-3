@@ -4,4 +4,4 @@ const EquipmentsAtWorkList: React.FC = () => {
 
 export default EquipmentsAtWorkList;
 
-rafce;
+

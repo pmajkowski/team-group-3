@@ -1,10 +1,8 @@
-.gallery {
-    text-align: center;
-    
-}
 .rendered-items {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     padding: 30px;
+    background-color:gray;
 }
