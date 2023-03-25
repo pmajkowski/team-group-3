@@ -5,10 +5,10 @@
     flex-wrap: wrap;
     gap: 50px;
     padding: 30px;
-    background-color:dimgray;
+    background-color:lightgray;
 }
 h1 {
-    background-color:dimgray;
+    background-color:lightgray;
     margin: 0;
     text-align: center;
 }
