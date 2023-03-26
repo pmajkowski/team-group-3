@@ -13,6 +13,12 @@ interface EquipmentImageItemProps {
 }
 export default function EquipmentsRentalItem(props:EquipmentsDetails) {
   return (
-    <div>{props.name}</div>
+    <div>
+    <div>
+        Name: {props.name}<br/>
+        Price: {props.price}zł<br/>
+        Availability: {props.availability === true?"Tak":"Nie"}
+    </div>
+    </div>
   )
 }
