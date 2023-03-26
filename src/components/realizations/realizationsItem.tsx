@@ -1,4 +1,4 @@
-import './RealizationsItem.css'
+import './realizationsItem.css'
 
 export interface RealizationsItem {
     src: string;

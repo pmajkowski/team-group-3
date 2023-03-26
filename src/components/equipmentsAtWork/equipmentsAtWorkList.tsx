@@ -8,8 +8,8 @@ import s7 from "../../img/gallery/equipments at work/s7.jpeg"
 import s8 from "../../img/gallery/equipments at work/s8.jpeg"
 import s9 from "../../img/gallery/equipments at work/s9.jpeg"
 import s10 from "../../img/gallery/equipments at work/s10.jpeg"
-import { EquipmentsAtWorkItem } from "./EquipmentsAtWorkItem"
-import './EquipmentsAtWorkList.css'
+import { EquipmentsAtWorkItem } from "./equipmentsAtWorkItem"
+import './equipmentsAtWorkList.css'
 
 const equipmentsList: EquipmentsAtWorkItem[]=[
 	{src: s1, alt: "equipment 1"},
