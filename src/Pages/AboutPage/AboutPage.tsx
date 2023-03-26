@@ -1,8 +1,16 @@
 import React from "react";
-import SidebarNavigationList from "../../components/SidebarNavigation/SidebarNavigationList";
+import AboutForm from "../../components/about/AboutForm";
+import NavigationList from "../../components/Navigation/NavigationList";
+import UserNavigationList from "../../components/UserNavigation/UserNavigationList";
 
-const AboutPage: React.FC = () => {
-	return <SidebarNavigationList />;
-};
+function AboutPage(): JSX.Element {
+  return (
+    <div className="App">
+      <UserNavigationList />
+      <NavigationList />
+      <AboutForm />;
+    </div>
+  );
+}
 
 export default AboutPage;
