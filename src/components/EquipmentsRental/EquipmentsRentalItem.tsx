@@ -13,10 +13,13 @@ import t2 from "../../img/equipments/rail transport/t2.jpeg"
 import zg1 from "../../img/equipments/rail welding/zg1.jpeg"
 import z1 from "../../img/equipments/turnout installation/z1.jpeg"
 import z2 from "../../img/equipments/turnout installation/z2.jpeg"
+import { EquipmentData, ImageEffectClass, SingleImageClass } from "./EquipmentRentalItemStyled"
 interface EquipmentsDetails {
     name:string,
     price:number,
+    rentalType:string,
     availability: boolean,
+    category:string,
     src:string,
     alt:string
 }
@@ -34,14 +37,18 @@ export interface EquipmentImageItemDetails {
 export function EquipmentsRentalItem(props:EquipmentsDetails) {
   console.log(props.src)
   return (
-    <div>
-      <div>
-        <img src={props.src} alt={props.alt} /></div>
-    <div>
-        Name: {props.name}<br/>
-        Price: {props.price}zł<br/>
-        Availability: {props.availability === true?"Tak":"Nie"}<br/>
-    </div>
-    </div>
+    <SingleImageClass>
+      <ImageEffectClass>
+        <img src={props.src} alt={props.alt} />
+      </ImageEffectClass>
+    <EquipmentData>
+      <ul>
+        <li>{props.name} </li>
+        <li>Price: {props.price}zł/{props.rentalType}</li>
+        <li>Availability: {props.availability === true?"Yes":"No"}</li>
+        <li>{props.category}</li>
+      </ul>
+    </EquipmentData>
+    </SingleImageClass>
   )
 }

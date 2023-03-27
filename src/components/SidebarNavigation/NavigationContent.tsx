@@ -31,12 +31,12 @@ export const SidebardAboutNavigation = [
 export const SidebardEquipmentRentalsNavigation = [
 	{
 		id: 1,
-		name: `General construction equipments`,
+		name: `Excavator attachments`,
 		link: ``,
 	},
 	{
 		id: 2,
-		name: `Excavator attachments`,
+		name: `General construction equipments`,
 		link: ``,
 	},
 	{
@@ -46,17 +46,17 @@ export const SidebardEquipmentRentalsNavigation = [
 	},
 	{
 		id: 4,
-		name: `Turnout installation`,
-		link: ``,
-	},
-	{
-		id: 5,
 		name: `Rail transport`,
 		link: ``,
 	},
 	{
-		id: 6,
+		id: 5,
 		name: `Rail welding`,
+		link: ``,
+	},
+	{
+		id: 6,
+		name: `Turnout installation`,
 		link: ``,
 	}
 	
