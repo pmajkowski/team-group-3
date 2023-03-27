@@ -1,4 +1,4 @@
-import {RealizationsItem, RealizationsItemProps} from "./realizationsItem";
+import {RealizationsItem, RealizationsItemDetails} from "./realizationsItem";
 import './realizationsList.css'
 import r1 from "../../img/gallery/realizations/r1.jpg"
 import r2 from "../../img/gallery/realizations/r2.jpeg"
@@ -12,7 +12,7 @@ import r9 from "../../img/gallery/realizations/r9.jpeg"
 import r10 from "../../img/gallery/realizations/r10.jpeg"
 import r11 from "../../img/gallery/realizations/r11.jpeg"
 
-const imageList: RealizationsItem[] = [
+const imageList: RealizationsItemDetails[] = [
     {src: r1, alt: 'Realization 1'},
     {src: r2, alt: 'Realization 2'},
     {src: r3, alt: 'Realization 3'},
@@ -27,9 +27,9 @@ const imageList: RealizationsItem[] = [
   ];
  
   const RealizationsList: React.FC = () => {
-    function renderedImageList(realizationsItem:RealizationsItem) :JSX.Element {
+    function renderedImageList(realizationsItemDetails:RealizationsItemDetails) :JSX.Element {
         return <RealizationsItem
-        realizationsItem={realizationsItem}
+        realizationsItemDetails={realizationsItemDetails}
         />
      }
 	return (
