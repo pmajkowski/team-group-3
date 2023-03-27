@@ -20,6 +20,10 @@ interface EquipmentsDetails {
     src:string,
     alt:string
 }
+export interface EquipmentImageItemDetails {
+  src:string;
+  alt:string;
+}
 
 // export interface EquipmentImageItemProps {
 //     equipmentImageItem:EquipmentImageItemDetails
@@ -28,9 +32,11 @@ interface EquipmentsDetails {
 // export type EquipmentsDetailsAndItemDetails = EquipmentsDetails & EquipmentImageItemProps;
 
 export function EquipmentsRentalItem(props:EquipmentsDetails) {
+  console.log(props.src)
   return (
     <div>
-        <img src={props.src} alt={props.alt}/>
+      <div>
+        <img src={props.src} alt={props.alt} /></div>
     <div>
         Name: {props.name}<br/>
         Price: {props.price}zł<br/>
