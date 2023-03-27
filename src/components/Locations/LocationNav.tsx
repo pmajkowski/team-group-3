@@ -1,6 +1,7 @@
 import React from "react";
 import classes from './LocationNav.module.css'
 
+
 export const LocationNav = ():JSX.Element => {
   return (
     <div className={classes.container}>
@@ -8,6 +9,7 @@ export const LocationNav = ():JSX.Element => {
         <li>Gdynia</li>
         <li>Gdańsk</li>
         <li>Wejherowo</li>
+  
       </ul>
     </div>
   );
