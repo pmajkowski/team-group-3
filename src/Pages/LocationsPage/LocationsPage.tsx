@@ -8,7 +8,7 @@ function LocationsPage(): JSX.Element {
     <div className="App">
       <UserNavigationList />
       <NavigationList />
-      <SidebarNavigationList />;
+      <SidebarNavigationList />
     </div>
   );
 }
