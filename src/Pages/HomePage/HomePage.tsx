@@ -5,7 +5,6 @@ import Button from "../../components/buttons/Button";
 
 import QuestionForm from "../../components/Questions/QuestionForm";
 import Maps from "../../components/Maps/Maps";
-import AboutForm from "../../components/about/AboutForm";
 import NavigationList from "../../components/Navigation/NavigationList";
 import UserNavigationList from "../../components/UserNavigation/UserNavigationList";
 import ContentForm from "../../components/content/ContentForm";
@@ -42,7 +41,6 @@ function HomePage(): JSX.Element {
           submit to database
         </Button>
         <ContentForm></ContentForm>
-        <AboutForm></AboutForm>
       </form>
       <Maps></Maps>
     </div>

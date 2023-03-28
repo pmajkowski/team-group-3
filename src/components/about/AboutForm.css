@@ -1,6 +1,5 @@
 .about {
-  height: 700px;
-  background-color: whitesmoke;
+  height: 800px;
 }
 
 .container {
@@ -9,10 +8,10 @@
 }
 
 .gallery {
-  width: 500px;
+  width: 660px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
 }
 img {
@@ -20,10 +19,25 @@ img {
   width: 14em;
 }
 .content {
-  padding-top: 25px;
+  padding-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
+}
+
+.header_about {
+  height: 650px;
+  background-image: url(./../../img/train_2.jpeg);
+  background-position: center right;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.h1_about {
+  color: aliceblue;
+  padding-left: 30px;
 }
 
 .h2_about {

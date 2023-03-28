@@ -15,7 +15,9 @@ function AboutForm() {
           <img src={trainImg_2} alt="Fast Train" />
         </div>
         <div className="content">
-          <h1>About TRAIN SHOP LTD</h1>
+          <div className="header_about">
+            <h1 className="h1_about">ABOUT TRAIN SHOP LTD</h1>
+          </div>
           <div className="h2_about">
             <h2>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sunt
@@ -28,7 +30,6 @@ function AboutForm() {
           </div>
         </div>
       </div>
-      <Button>Home</Button>
     </div>
   );
 }
