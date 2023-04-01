@@ -10,7 +10,6 @@ import r8 from "../../img/gallery/realizations/r8.jpg"
 import r9 from "../../img/gallery/realizations/r9.jpeg"
 import r10 from "../../img/gallery/realizations/r10.jpeg"
 import r11 from "../../img/gallery/realizations/r11.jpeg"
-import { useState } from "react";
 import React from "react";
 import { RealizationsGallery } from "./RealizationsGallery";
 import { H1, RenderedListClass } from "./realizationsListStyled";

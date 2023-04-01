@@ -7,12 +7,13 @@ export const SingleImageClass = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 225px;
-`;
+`
 export const ImageEffectClass = styled.div`
     transition: transform 0.2s ease-in-out;
     border-radius: 10px;
     img {
         border-radius: 10px;
+        cursor: pointer;
     }
     &:hover {
         transform: scale(0.9); 
