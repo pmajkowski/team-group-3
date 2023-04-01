@@ -1,16 +1,15 @@
-import './realizationsItem.css'
+import { SingleImageClass } from './realizationsItemStyled';
 
-export interface RealizationsItemDetails {
+export interface RealizationsItemDetailsProps {
     src: string;
     alt: string;
-}
-export interface RealizationsItemProps {
-    realizationsItemDetails: RealizationsItemDetails
+    onClick?:()=>void;
 }
 
-export function RealizationsItem(props:RealizationsItemProps): JSX.Element {
+
+export function RealizationsItem(props:RealizationsItemDetailsProps): JSX.Element {
   return (
-  <div className="single-image">
-    <img alt={props.realizationsItemDetails.alt} src={props.realizationsItemDetails.src} className="image-ef"/>
-</div>)
+  <SingleImageClass>
+    <img alt={props.alt} src={props.src} onClick={props.onClick}className="image-ef"/>
+</SingleImageClass>)
 }

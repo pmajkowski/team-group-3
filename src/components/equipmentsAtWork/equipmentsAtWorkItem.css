@@ -1,7 +1,8 @@
 .single-equipment {
     padding: 10px;
     border-radius: 10px;
-    background-color:azure;  
+    background-color:azure; 
+    cursor: pointer;
 }
 .equipment-ef{
     transition: transform 0.2s ease-in-out;
@@ -9,4 +10,5 @@
 }
 .equipment-ef:hover {
     transform: scale(1.2);
+    
 }
