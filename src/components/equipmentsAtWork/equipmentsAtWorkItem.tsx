@@ -1,15 +1,18 @@
-import './equipmentsAtWorkItem.css'
-export interface EquipmentsAtWorkItem {
+
+import { SingleImageClass } from './equipmentsAtWorkItemStyled'
+export interface EquipmentsAtWorkItemProps {
     src: string,
-    alt: string
-}
-interface EquipmentsAtWorkItemProps {
-    equipmentsAtWorkItem: EquipmentsAtWorkItem
+    alt: string,
+    onClick?:()=>void;
 }
 export function EquipmentsAtWorkItem(props:EquipmentsAtWorkItemProps) {
   return (
-    <div className="single-equipment">
-        <img alt={props.equipmentsAtWorkItem.alt} src={props.equipmentsAtWorkItem.src} className="equipment-ef"/>
-    </div>
+    <SingleImageClass>
+        <img 
+        alt={props.alt} 
+        src={props.src}
+        onClick={props.onClick}
+        />
+        </SingleImageClass>
   )
 }
