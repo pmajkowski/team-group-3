@@ -9,16 +9,15 @@ export const SingleImageClass = styled.div`
   max-width: 225px;
 `;
 export const ImageEffectClass = styled.div`
-  transition: transform 0.2s ease-in-out;
-  border-radius: 10px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  overflow: hidden;
-  height: 100%;
-  &:hover {
-    transform: scale(0.9);
-  }
-`;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+    img {
+        border-radius: 10px;
+    }
+    &:hover {
+        transform: scale(0.9); 
+    }
+`
 export const EquipmentData = styled.div`
   li {
     list-style: none;
