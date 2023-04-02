@@ -1,39 +1,77 @@
-import { EquipmentData, ImageEffectClass, SingleImageClass } from "./EquipmentsRentalItemStyled"
-import { DocumentData } from "firebase/firestore";
-export interface EquipmentsDetails {
-firebaseData:DocumentData
-  onClick?:()=>void
-}
-export interface EquipmentImageItemDetails {
+import Button from "../buttons/Button";
+import {
+  EquipmentData,
+  ImageEffectClass,
+  SingleImageClass,
+} from "./EquipmentsRentalItemStyled";
+import { useState } from "react";
+import {
+  EquipmentDataD,
+  SelectedImageOverlay,
+  SingleImageClassD,
+} from "./EquipmentsRentalItemDetailsStyled";
+
+interface EquipmentsRentalItemProps {
+  name: string;
+  price: string;
+  rentalType: string;
+  availability: boolean;
+  category: string;
   src: string;
   alt: string;
 }
 
-// export interface EquipmentImageItemProps {
-//     equipmentImageItem:EquipmentImageItemDetails
-// }
+export function EquipmentsRentalItem({
+  name,
+  price,
+  rentalType,
+  availability,
+  category,
+  src,
+  alt,
+}: EquipmentsRentalItemProps) {
+  const [openItemDetails, setOpenItemDetails] = useState<boolean>(false);
 
-// export type EquipmentsDetailsAndItemDetails = EquipmentsDetails & EquipmentImageItemProps;
+  const handleClick = () => {
+    setOpenItemDetails(!openItemDetails);
+  };
 
-export function EquipmentsRentalItem(props: EquipmentsDetails) {
-  console.log(props.firebaseData.src);
   return (
-    <SingleImageClass>
-      <ImageEffectClass>
-        <img 
-        src={props.firebaseData.src} 
-        alt={props.firebaseData.alt}
-        onClick={props.onClick}
-         />
-      </ImageEffectClass>
-      <EquipmentData>
-        <li>{props.firebaseData.name} </li>
-        <li>
-          Price: {props.firebaseData.price}zł/{props.firebaseData.rentalType}
-        </li>
-        <li>Availability: {props.firebaseData.availability === true ? "Yes" : "No"}</li>
-        <li>{props.firebaseData.category}</li>
-      </EquipmentData>
-    </SingleImageClass>
+    <div>
+      {openItemDetails && (
+        <SelectedImageOverlay>
+          <SingleImageClassD>
+            <EquipmentDataD>
+              <li>{name} </li>
+              <li>
+                Price: {price}zł/
+                {rentalType}
+              </li>
+              <li>Availability: {availability === true ? "Yes" : "No"}</li>
+              <li>{category}</li>
+              <Button type="button" onClick={handleClick}>
+                Details
+              </Button>
+            </EquipmentDataD>
+          </SingleImageClassD>
+        </SelectedImageOverlay>
+      )}
+      <SingleImageClass>
+        <ImageEffectClass>
+          <img src={src} alt={alt} />
+        </ImageEffectClass>
+        <EquipmentData>
+          <li>{name}</li>
+          <li>
+            Price: {price} zł/{rentalType}
+          </li>
+          <li>Availability: {availability ? "Yes" : "No"}</li>
+          <li>{category}</li>
+          <Button type="button" onClick={handleClick}>
+            Details
+          </Button>
+        </EquipmentData>
+      </SingleImageClass>
+    </div>
   );
 }
