@@ -1,5 +1,6 @@
 import NavigationItem from "./NavigationItem";
-
+import "./NavigationListStyle.css";
+import { FaPhoneAlt } from "react-icons/fa";
 interface ListedNavigation {
   id: number;
   name: string;
@@ -55,8 +56,11 @@ function NavigationList() {
     );
   });
   return (
-    <div className="flex flex-wrap justify-center items-center max-w-6xl mx-auto my-12 flex-row gap-x-5">
+    <div className="navigation-list">
       {renderedNavigationList}
+      <div className="phone">
+        <FaPhoneAlt /> <p>517 924 791</p>
+      </div>
     </div>
   );
 }

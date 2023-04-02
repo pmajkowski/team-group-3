@@ -1,0 +1,7 @@
+.user-navigation__list {
+  background-color: #191919;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  z-index: 10;
+}

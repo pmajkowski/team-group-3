@@ -1,0 +1,19 @@
+.navigation-list {
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 1rem;
+  color: #555;
+}

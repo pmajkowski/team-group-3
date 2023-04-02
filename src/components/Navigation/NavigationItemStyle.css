@@ -1,0 +1,3 @@
+.navigation-item:first-of-type {
+  flex-grow: 1;
+}
