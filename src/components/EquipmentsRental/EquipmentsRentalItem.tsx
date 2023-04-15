@@ -41,6 +41,7 @@ export function EquipmentsRentalItem({
       {openItemDetails && (
         <SelectedImageOverlay>
           <SingleImageClassD>
+          <img src={src} alt={alt} />
             <EquipmentDataD>
               <li>{name} </li>
               <li>
@@ -49,8 +50,14 @@ export function EquipmentsRentalItem({
               </li>
               <li>Availability: {availability === true ? "Yes" : "No"}</li>
               <li>{category}</li>
+              <Button 
+          type="button" 
+          onClick={handleClick}
+          secondary>
+            Add
+          </Button>
               <Button type="button" onClick={handleClick}>
-                Details
+                Back
               </Button>
             </EquipmentDataD>
           </SingleImageClassD>
@@ -58,7 +65,7 @@ export function EquipmentsRentalItem({
       )}
       <SingleImageClass>
         <ImageEffectClass>
-          <img src={src} alt={alt} />
+          <img src={src} alt={alt} onClick={handleClick}/>
         </ImageEffectClass>
         <EquipmentData>
           <li>{name}</li>
