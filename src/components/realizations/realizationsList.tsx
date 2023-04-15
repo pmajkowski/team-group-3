@@ -12,7 +12,7 @@ import r10 from "../../img/gallery/realizations/r10.jpeg"
 import r11 from "../../img/gallery/realizations/r11.jpeg"
 import React from "react";
 import { RealizationsGallery } from "./RealizationsGallery";
-import { H1, RenderedListClass } from "./realizationsListStyled";
+import { RenderedListClass, TitleOfCart } from "./realizationsListStyled";
 
 const imageList: RealizationsItemDetailsProps[] = [
     {src: r1, alt: 'Realization 1'},
@@ -48,7 +48,7 @@ const imageList: RealizationsItemDetailsProps[] = [
      }
 	return (
         <div>
-            <H1>Our participation in the implementation of the investment "Reconstruction of Gdynia Port station"</H1>
+            <TitleOfCart>Our participation in the implementation of the investment "Reconstruction of Gdynia Port station"</TitleOfCart>
         <RenderedListClass>{imageList.map(renderedImageList)}</RenderedListClass> 
         {selectedItem !== null && (
                 <RealizationsGallery
