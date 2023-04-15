@@ -5,5 +5,12 @@ export const RenderedListClass = styled.div`
   flex-wrap: wrap;
   gap: 50px;
   padding: 30px;
-  background-color: lightgray;
+  color: #555;
 `;
+
+export const TitleOfCart = styled.div`
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+`

@@ -2,7 +2,7 @@ import { collection, query, getDocs, DocumentData } from "firebase/firestore";
 import { firestore } from "../../firebase";
 import React from "react";
 import { EquipmentsRentalItem } from "./EquipmentsRentalItem";
-import { RenderedListClass } from "./EquipmentsRentalListStyled";
+import { RenderedListClass, TitleOfCart } from "./EquipmentsRentalListStyled";
 
 export default function EquipmentsRentalList() {
   const [equipmentstFirestoreData, setEquipmentstFirestoreData] =
@@ -21,7 +21,7 @@ export default function EquipmentsRentalList() {
 
   return (
     <div>
-      <h1>EquipmentsRentalList</h1>
+      <TitleOfCart>Equipment Rental List</TitleOfCart>
       <RenderedListClass>
         {equipmentstFirestoreData.map((equipment) => (
           <EquipmentsRentalItem

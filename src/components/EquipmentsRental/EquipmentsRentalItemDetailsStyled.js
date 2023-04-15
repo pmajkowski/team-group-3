@@ -2,17 +2,21 @@ import styled from "styled-components";
 
 export const SingleImageClassD = styled.div`
   padding: 10px;
-  border-radius: 10px;
-  background-color: azure;
+
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
   border: 1px solid #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   img {
-    border-radius: 10px;
+    width: 640px;
+  height: 480px;
+
     cursor: pointer;
   }
 `;
@@ -35,6 +39,7 @@ export const EquipmentDataD = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 50%;
+  gap: 5px;
 `;
 export const SelectedImageOverlay = styled.div`
   position: fixed;
