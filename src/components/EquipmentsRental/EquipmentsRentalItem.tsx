@@ -3,13 +3,11 @@ import {
   EquipmentData,
   ImageEffectClass,
   SingleImageClass,
-} from "./EquipmentsRentalItemStyled";
-import { useState } from "react";
-import {
   EquipmentDataD,
   SelectedImageOverlay,
-  SingleImageClassD,
-} from "./EquipmentsRentalItemDetailsStyled";
+  SingleImageClassD
+} from "./EquipmentsRentalItemStyled";
+import { useState } from "react";
 
 interface EquipmentsRentalItemProps {
   name: string;

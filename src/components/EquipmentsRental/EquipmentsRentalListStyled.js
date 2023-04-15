@@ -11,6 +11,8 @@ export const RenderedListClass = styled.div`
 export const TitleOfCart = styled.div`
   background: white;
   display: flex;
-  justify-content: flex-start;
-  padding: 10px;
+  justify-content: center;
+  padding: 20px;
+  color: #555;
+  font-weight: 700;
 `
