@@ -10,8 +10,6 @@ import r8 from "../../img/gallery/realizations/r8.jpg"
 import r9 from "../../img/gallery/realizations/r9.jpeg"
 import r10 from "../../img/gallery/realizations/r10.jpeg"
 import r11 from "../../img/gallery/realizations/r11.jpeg"
-import React from "react";
-import { RealizationsGallery } from "./RealizationsGallery";
 import { RenderedListClass, TitleOfCart } from "./realizationsListStyled";
 
 const imageList: RealizationsItemDetailsProps[] = [
@@ -29,33 +27,17 @@ const imageList: RealizationsItemDetailsProps[] = [
   ];
  
   const RealizationsList = (): JSX.Element => {
-    const [selectedItem, setSelectedItem] = React.useState<RealizationsItemDetailsProps | null>(null)
-    const handleItemClick = (item:RealizationsItemDetailsProps):void => {
-        setSelectedItem(item)
-    }
-
-    const handleGalleryClose = ():void=>{
-        setSelectedItem(null)
-    }
-
     function renderedImageList(realizationsItemDetails:RealizationsItemDetailsProps) :JSX.Element {
         return <RealizationsItem
         key={realizationsItemDetails.src}
         alt={realizationsItemDetails.alt}
         src={realizationsItemDetails.src}
-        onClick={()=>handleItemClick(realizationsItemDetails)}
         />
      }
 	return (
         <div>
             <TitleOfCart>Our participation in the implementation of the investment "Reconstruction of Gdynia Port station"</TitleOfCart>
         <RenderedListClass>{imageList.map(renderedImageList)}</RenderedListClass> 
-        {selectedItem !== null && (
-                <RealizationsGallery
-                selectedItem={selectedItem}
-                onClose={handleGalleryClose}
-                />
-            )}
         </div>
     )
 };

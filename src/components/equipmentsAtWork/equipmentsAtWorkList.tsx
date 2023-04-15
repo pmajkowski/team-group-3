@@ -10,7 +10,6 @@ import s9 from "../../img/gallery/equipments at work/s9.jpeg"
 import s10 from "../../img/gallery/equipments at work/s10.jpeg"
 import { EquipmentsAtWorkItem, EquipmentsAtWorkItemProps } from "./equipmentsAtWorkItem"
 import {  RenderedListClass, TitleOfCart } from "./equipmentsAtWorkListStyled"
-import { EquipmentsAtWorkGallery } from "./EquipmentsAtWorkGallery"
 import React from "react"
 
 
@@ -28,19 +27,11 @@ const equipmentsList: EquipmentsAtWorkItemProps[]=[
 ];
 
 const EquipmentsAtWorkList: React.FC = () => {
-	const [selectedItem, setSelectedItem]= React.useState<EquipmentsAtWorkItemProps|null>(null)
-	const handleItemClick=(item:EquipmentsAtWorkItemProps)=>{
-		setSelectedItem(item)
-	}
-	const handleGalleryClose = ():void=>{
-		setSelectedItem(null)
-	}
 	const renderedEquipmentsList =(equipmentsAtWorkItem:EquipmentsAtWorkItemProps): JSX.Element => {
 		return <EquipmentsAtWorkItem 
 		key={equipmentsAtWorkItem.src}
 		src={equipmentsAtWorkItem.src}
 		alt={equipmentsAtWorkItem.alt}
-		onClick={()=>{handleItemClick(equipmentsAtWorkItem)}}
 		/>
 	}
 	return <div>
@@ -48,12 +39,6 @@ const EquipmentsAtWorkList: React.FC = () => {
 		<RenderedListClass>
 		{equipmentsList.map(renderedEquipmentsList)}
 		</RenderedListClass>
-		{selectedItem !== null && (
-		<EquipmentsAtWorkGallery 
-		selectedItem={selectedItem}
-		onClose={handleGalleryClose}
-		/>
-		)}
 	</div>
 };
 
