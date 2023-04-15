@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SingleImageClass = styled.div`
   padding: 10px;
-border: 1px solid lightgrey;
+  border: 1px solid lightgrey;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,6 @@ export const EquipmentData = styled.div`
 export const SingleImageClassD = styled.div`
   padding: 30px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
   display: flex;
   justify-content: center;
   align-items: center;

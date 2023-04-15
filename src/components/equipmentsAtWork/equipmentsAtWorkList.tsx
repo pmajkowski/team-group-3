@@ -9,7 +9,7 @@ import s8 from "../../img/gallery/equipments at work/s8.jpeg"
 import s9 from "../../img/gallery/equipments at work/s9.jpeg"
 import s10 from "../../img/gallery/equipments at work/s10.jpeg"
 import { EquipmentsAtWorkItem, EquipmentsAtWorkItemProps } from "./equipmentsAtWorkItem"
-import { H1, RenderedListClass } from "./equipmentsAtWorkListStyled"
+import {  RenderedListClass, TitleOfCart } from "./equipmentsAtWorkListStyled"
 import { EquipmentsAtWorkGallery } from "./EquipmentsAtWorkGallery"
 import React from "react"
 
@@ -44,7 +44,7 @@ const EquipmentsAtWorkList: React.FC = () => {
 		/>
 	}
 	return <div>
-		<H1 className="h1-equip">Our equipment while working on site</H1>
+		<TitleOfCart className="h1-equip">Our Equipment While Working On Site</TitleOfCart>
 		<RenderedListClass>
 		{equipmentsList.map(renderedEquipmentsList)}
 		</RenderedListClass>
