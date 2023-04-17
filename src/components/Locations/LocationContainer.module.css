@@ -2,7 +2,7 @@
   display:flex;
   justify-content: flex-start;
   align-content: stretch;
-  margin:20px 20px;
+
   box-sizing: border-box;
 }
 .left{

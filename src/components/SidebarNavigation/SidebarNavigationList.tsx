@@ -7,6 +7,7 @@ import {
   SidebardLocationsNavigation,
   SidebardAboutNavigation,
   SidebardEquipmentRentalsNavigation,
+ 
 } from "./NavigationContent";
 import "./SidebarNavigationListStyle.css";
 
