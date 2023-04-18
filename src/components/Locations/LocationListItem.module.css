@@ -6,20 +6,21 @@
   box-shadow: 1px 1px 20px rgba(92, 92, 247, 0.5);
 }
 
+.image,.map, .adress {
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(179, 176, 176, 0.5);
+  box-shadow: 1px 1px 20px rgba(92, 92, 247, 0.5);
+}
 h3 {
   background-color: #0461c1;
   color: white;
   padding: 10px;
   font-size: 30px;
   margin: 0px;
+  display:block;
 }
 
-.img {
-  width: 200px;
-  height: 200px;
-  border: 2px solid rgb(179, 176, 176, 0.5);
-  box-shadow: 1px 1px 20px rgba(92, 92, 247, 0.5);
-}
 
 .adress{
   border: 2px solid rgb(179, 176, 176, 0.5);

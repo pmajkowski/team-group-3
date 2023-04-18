@@ -1,36 +1,36 @@
 [
   {
-    "name":"Headquarters Gdynia",
+    "name":"Sklep Gdynia",
     "city": "Gdynia",
     "phone": "482232252",
-    "adress": [{ "street": "Gołębia" }, { "local": "3" }, { "post": "81-185" }],
+    "adress": { "street": "Gołębia" , "local": "3" ,  "post": "81-185" },
     "country": "Poland",
     "open":"8:00",
     "close":"18:00"
   },
   {
-    "name":"Super equip",
+    "name":"Super sklep Gdańsk",
     "city": "Gdańsk",
     "phone": "482432252",
-    "adress": [
-      { "street": "Kielnieńska" },
-      { "local": "32" },
-      { "post": "80-299" }
-    ],
+    "adress": 
+      { "street": "Kielnieńska" ,
+      "local": "32" ,
+      "post": "80-299" }
+    ,
     "country": "Poland",
     "post": "80-299",
     "open":"8:30",
     "close":"20:00"
   },
   {
-    "name":"Rentme",
+    "name":"Extra sklep Wejherowo",
     "city": "Wejherowo",
     "phone": "482253252",
-    "adress": [
-      { "street": "Lęborska" },
-      { "local": "320" },
-      { "post": "83-299" }
-    ],
+    "adress": 
+      { "street": "Lęborska" ,
+      "local": "320" ,
+      "post": "83-299" }
+    ,
     "country": "Poland",
     "open":"7:00",
     "close":"17:00"
