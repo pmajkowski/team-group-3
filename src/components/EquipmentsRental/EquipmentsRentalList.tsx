@@ -1,6 +1,6 @@
 import { collection, query, getDocs, DocumentData } from "firebase/firestore";
 import { firestore } from "../../firebase";
-import React from "react";
+import React, { useState } from "react";
 import { EquipmentsRentalItem } from "./EquipmentsRentalItem";
 import { RenderedListClass, TitleOfCart } from "./EquipmentsRentalListStyled";
 import a1 from "../../img/equipments/excavator attachments/a1.jpeg"
@@ -53,12 +53,15 @@ export default function EquipmentsRentalList() {
   React.useEffect(() => {
     fetchAllEquipments();
   }, []);
-
+  // const handleChangedCategory = (cat:any)=>{
+  //   const filteredEquipmentsFirestoreData = equipmentstFirestoreData.filter((filteredItem)=>filteredItem.category !==cat)
+  //   setEquipmentstFirestoreData(filteredEquipmentsFirestoreData);
+  // }
   return (
     <div>
       <TitleOfCart>Equipment Rental List</TitleOfCart>
       <RenderedListClass>
-        {equipmentstFirestoreData.map((equipment) => (
+        {equipmentstFirestoreData.map((equipment:any) => (
           <EquipmentsRentalItem
             key={equipment.name}
             name={equipment.name}

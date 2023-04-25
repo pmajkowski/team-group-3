@@ -29,10 +29,13 @@ export function EquipmentsRentalItem({
   alt,
 }: EquipmentsRentalItemProps) {
   const [openItemDetails, setOpenItemDetails] = useState<boolean>(false);
-
   const handleClick = () => {
     setOpenItemDetails(!openItemDetails);
   };
+  const [cat, setCat] = useState('');
+  const getCategory = (event:any) =>{
+    setCat(event.target.innerHTML)
+  }
 
   return (
     <div>
@@ -71,7 +74,10 @@ export function EquipmentsRentalItem({
             Price: {price} zł/{rentalType}
           </li>
           <li>Availability: {availability ? "Yes" : "No"}</li>
-          <li>{category}</li>
+          <li
+          onClick={getCategory}
+          style={{ cursor: 'pointer' }}
+          >{category}</li>
           <Button type="button" onClick={handleClick}>
             Details
           </Button>
