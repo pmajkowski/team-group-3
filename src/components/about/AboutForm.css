@@ -1,17 +1,17 @@
 .about {
-  height: 800px;
+  height: 750px;
 }
 
 .container {
+  background: #b9b6b69c;
   display: flex;
   gap: 30px;
 }
 
 .gallery {
-  width: 660px;
+  width: 850px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: center;
 }
 img {
@@ -22,11 +22,12 @@ img {
   padding-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 .header_about {
-  height: 650px;
+  box-shadow: -10px 10px 4px #949191;
+  height: 610px;
   background-image: url(./../../img/train_2.jpeg);
   background-position: center right;
   background-size: cover;
@@ -35,12 +36,39 @@ img {
   justify-content: end;
 }
 
-.h1_about {
-  color: aliceblue;
-  padding-left: 30px;
+.p_about {
+  width: 40rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3.5rem;
+  background-color: #7e7b7bb1;
+  color: rgb(251, 215, 222);
+  letter-spacing: 0.4rem;
+  padding-left: 15px;
+  margin-bottom: 15px;
 }
 
 .h2_about {
   padding: 0 0 50px 150px;
   text-align: right;
+}
+
+.h2_side {
+  display: inline-flex;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-image: url(./../../img/train.jpeg);
+  font-size: 3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #c6bcbc45;
+  animation: move 34s alternate-reverse infinite;
+  letter-spacing: 0.3rem;
+}
+
+@keyframes move {
+  from {
+    background-position: 0 80%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
 }

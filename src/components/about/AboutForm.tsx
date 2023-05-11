@@ -1,22 +1,15 @@
 import "./AboutForm.css";
-import Button from "../buttons/Button";
-import trainImg from "./../../img/train.jpeg";
-import trainImg_1 from "./../../img/train_2.jpeg";
-import trainImg_2 from "./../../img/train_3.jpeg";
 
 function AboutForm() {
   return (
     <div className="about">
       <div className="container">
         <div className="gallery">
-          <h2 className="h2_side">Our Projects</h2>
-          <img src={trainImg} alt="Train on the track" />
-          <img src={trainImg_1} alt="Dirty locomotive" />
-          <img src={trainImg_2} alt="Fast Train" />
+          <h2 className="h2_side">About Us</h2>
         </div>
         <div className="content">
           <div className="header_about">
-            <h1 className="h1_about">ABOUT TRAIN SHOP LTD</h1>
+            <h1 className="p_about">ABOUT TRAIN SHOP LTD</h1>
           </div>
           <div className="h2_about">
             <h2>
