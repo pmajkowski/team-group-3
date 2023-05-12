@@ -1,6 +1,6 @@
 import React from "react";
 import "./ContentForm.css";
-import videoBg from "./../../movies/train.mp4";
+import videoBg from "./../../movies/train2.mp4";
 
 const ContentForm = () => {
   return (
