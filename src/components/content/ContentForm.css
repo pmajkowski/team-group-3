@@ -4,14 +4,11 @@ body {
 }
 
 .container_tiles {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
+  margin-right: -100%;
   gap: 30px;
-  /* background-color: rgba(0, 255, 255, 0.243); */
-  height: 350px;
+  height: 50vh;
   width: 100%;
+  min-width: 1080px;
   border: none;
 }
 

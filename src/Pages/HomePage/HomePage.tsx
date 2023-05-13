@@ -8,6 +8,7 @@ import Maps from "../../components/Maps/Maps";
 import NavigationList from "../../components/Navigation/NavigationList";
 import UserNavigationList from "../../components/UserNavigation/UserNavigationList";
 import ContentForm from "../../components/content/ContentForm";
+import Footer from "../../components/footer/footer";
 
 function HomePage(): JSX.Element {
   const testRef = useRef<HTMLInputElement>(null);
@@ -43,6 +44,7 @@ function HomePage(): JSX.Element {
         </Button>
       </form>
       <Maps></Maps>
+      <Footer></Footer>
     </div>
   );
 }
