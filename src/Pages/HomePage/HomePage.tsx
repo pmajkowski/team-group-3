@@ -40,7 +40,7 @@ function HomePage(): JSX.Element {
       <form onSubmit={handleSubmit}>
         <input type="text" ref={testRef} />
         <Button type={"submit"} primary>
-          submit to database
+          Submit to database
         </Button>
       </form>
       <Maps></Maps>

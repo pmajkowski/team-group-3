@@ -4,8 +4,16 @@ import videoBg from "./../../movies/train.mp4";
 
 const ContentForm = () => {
   return (
-    <div className="container_tiles">
-      <video src={videoBg} autoPlay muted loop />
+    <div className="main_container">
+      <div className="container_tiles">
+        <div>
+          <video src={videoBg} autoPlay muted loop />
+        </div>
+      </div>
+      <div className="search">
+        <h1>bla</h1>
+        <div className="rentals">bla bla</div>
+      </div>
     </div>
   );
 };

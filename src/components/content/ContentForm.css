@@ -3,24 +3,31 @@ body {
   padding: 0;
 }
 
+.main_container {
+  min-height: 300px;
+  width: auto;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
 .container_tiles {
-  margin-right: -100%;
-  gap: 30px;
-  height: 50vh;
   width: 100%;
-  min-width: 1080px;
   border: none;
+
+  position: relative;
 }
 
-.tile {
-  display: flex;
-  flex-direction: column;
+.search {
+  position: absolute;
+  top: 40%;
 }
 
-.h2_tile {
-  display: flex;
-  justify-content: center;
-  background-color: grey;
-  font-size: 18px;
+.rentals {
+  position: relative;
+  font-size: 38px;
   font-weight: bold;
+  color: rgb(255, 255, 255);
 }
