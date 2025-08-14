@@ -8,6 +8,7 @@ import Maps from "../../components/Maps/Maps";
 import NavigationList from "../../components/Navigation/NavigationList";
 import UserNavigationList from "../../components/UserNavigation/UserNavigationList";
 import ContentForm from "../../components/content/ContentForm";
+import Footer from "../../components/footer/footer";
 
 function HomePage(): JSX.Element {
   const testRef = useRef<HTMLInputElement>(null);
@@ -34,15 +35,16 @@ function HomePage(): JSX.Element {
     <div className="App">
       <UserNavigationList />
       <NavigationList />
+      <ContentForm></ContentForm>
       <QuestionForm></QuestionForm>
       <form onSubmit={handleSubmit}>
         <input type="text" ref={testRef} />
         <Button type={"submit"} primary>
-          submit to database
+          Submit to database
         </Button>
-        <ContentForm></ContentForm>
       </form>
       <Maps></Maps>
+      <Footer></Footer>
     </div>
   );
 }
